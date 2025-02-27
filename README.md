@@ -24,17 +24,17 @@
     *   Created a unified dataset.
     *   Saved the unified dataset to a CSV file.
   
-## Interpreting results
+**Interpreting results**
     * If the average 'rate_difference' is positive,we can say that on average, hospital-negotiated rates are higher than payer-negotiated rates. A negative average indicates the opposite.
     * By calculating standard deviation, we can say how varibale the differences are
 
-## Next Steps / Improvement
+**Next Steps / Improvement**
     * Create a tolerance precentage for the difference in rates
     * Can use more robust statistical methods to compare prices when dealing with large datasets
     * Data Visualization - Create charts and graphs to comapre prices
 
 
-## Learnings and Decisions
+**Learnings and Decisions**
 
 *   **Importance of Data Standardization:**  Standardizing hospital names and other key fields is crucial for accurate data integration.
 *   **Handling Missing Data:**  The full outer join ensures that all records are included, even if some data points are missing in one of the datasets.
