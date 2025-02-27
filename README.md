@@ -13,7 +13,7 @@
 
 3.  **Merging the data:**
     *   **Identify Join Keys:** Identified (hospital name, billing code, payer name) as relavant join keys as these are the common columns in both data sets.
-    *   **Perform Outer Join:** Performed a full outer join on the selected keys to ensure that all records from both datasets are included in the unified dataset.
+    *   **Perform Inner Join:** Performed a full inner join on the selected keys to ensure that all records from both datasets are included in the unified dataset.
 
 4.  **Conflict Resolution and Data Enrichment:**
     *   **Identify Overlapping Data:** Identified cases where both datasets provide pricing information for the same service.
