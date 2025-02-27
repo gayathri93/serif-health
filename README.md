@@ -24,17 +24,17 @@
     **   Created a unified dataset.
     **   Saved the unified dataset to a CSV file.
   
-**Interpreting results:**
+6.  **Interpreting results:**
     ** If the average 'rate_difference' is positive,we can say that on average, hospital-negotiated rates are higher than payer-negotiated rates. A negative average indicates the opposite.
     ** By calculating standard deviation, we can say how variable the differences are
 
-**Next Steps / Improvement:**
+7.  **Next Steps / Improvement:**
     ** Create a tolerance precentage for the difference in rates
     ** Can use more robust statistical methods to compare prices when dealing with large datasets
     ** Data Visualization - Create charts and graphs to comapre prices
 
 
-**Learnings and Decisions:**
+8.  **Learnings and Decisions:**
 
 *   **Importance of Data Standardization:**  Standardizing hospital names and other key fields is crucial for accurate data integration.
 *   **Discrepancy Analysis:**  Calculating the differences between hospital charges and payer-negotiated rates provides valuable insights into healthcare pricing variations.
