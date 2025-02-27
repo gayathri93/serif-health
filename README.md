@@ -2,16 +2,16 @@
 
 **Approach**
 
-1.  **Data Loading and Inspection:**
+1.  **Loading the data:**
     *   Loaded both datasets into pandas DataFrames.
     *   Inspected the data to understand the schema, data types, and identify potential issues.
 
-2.  **Data Cleaning and Transformation:**
+2.  **Cleaning the data:**
     *   **Standardize Hospital Names:** Converted hospital names to lowercase and remove spaces to ensure consistent matching.
     *   **Rename Columns:** Renamed columns to a unified schema for consistency.
     *   **Data Type Conversion:** Converted relevant columns (e.g., dates, numerical values) to the correct data types.
 
-3.  **Data Joining:**
+3.  **Merging the data:**
     *   **Identify Join Keys:** Identified (hospital name, billing code, payer name) as relavant join keys as these are the common columns in both data sets.
     *   **Perform Outer Join:** Performed a full outer join on the selected keys to ensure that all records from both datasets are included in the unified dataset.
 
