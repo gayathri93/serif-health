@@ -31,7 +31,7 @@ hospital_data = hospital_data.rename(columns={
     'standard_charge_methodology': 'standard_charge_methodology',
     'last_updated_on': 'last_updated_on'
 })
-hospital_data['code_type'] = hospital_data['billing_code'].apply(lambda x: 'MS-DRG' if str(x).isdigit() and len(str(x)) <= 3 else 'CPT') #inferring to match payer dataset column
+hospital_data['code_type'] = hospital_data['billing_code'].apply(lambda x: 'MS-DRG' if str(x).isdigit() and len(str(x)) <= 3 else 'CPT')
 hospital_data = hospital_data[[
     'hospital_name',
     'hospital_state',
@@ -83,7 +83,7 @@ payer_data = payer_data[[
 ]]
 
 #Data Merging
-combined_data = pd.merge(hospital_data, payer_data, on=['payer_name', 'billing_code', 'code_type'], how='inner', suffixes=('_hospital', '_payer')) #changed to inner
+combined_data = pd.merge(hospital_data, payer_data, on=['payer_name', 'billing_code', 'code_type'], how='inner', suffixes=('_hospital', '_payer'))
 
 #Calculating Difference
 
