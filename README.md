@@ -37,7 +37,6 @@
 **Learnings and Decisions:**
 
 *   **Importance of Data Standardization:**  Standardizing hospital names and other key fields is crucial for accurate data integration.
-*   **Handling Missing Data:**  The full outer join ensures that all records are included, even if some data points are missing in one of the datasets.
 *   **Discrepancy Analysis:**  Calculating the differences between hospital charges and payer-negotiated rates provides valuable insights into healthcare pricing variations.
 
 
